@@ -50,6 +50,7 @@ public class EmployeeController {
         EmployeeDto updatedEmployeeDto = employeeService.updateEmployee(employeeId, employeeDto);
         return new ResponseEntity<>(updatedEmployeeDto, HttpStatus.OK);
     }
+    
 
     // Delete Employee REST API
     @DeleteMapping("{id}")
